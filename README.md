@@ -1,12 +1,12 @@
 # 🕵️‍♀️ Scavenger Hunt Game – Session-Based Web App
 
-Welcome to the **Scavenger Hunt**! This interactive web game challenges players to uncover hidden items step-by-step — all while learning about how **web sessions** keep track of player progress behind the scenes.
+Welcome to the **Scavenger Hunt**! This interactive web game lets players play games to obtain 3 keys — behind the scenes, the main focus of this project is handling variables through sessions.
 
 ---
 
 ## 🎯 Introduction
 
-In this scavenger hunt game, players are taken through a series of steps that depend on remembering what came before — just like a traditional scavenger hunt. But how does the website know where a player left off?
+In this scavenger hunt game, players hunt for keys in order to open the secret magic door. This project stores these keys on the player's side.
 
 This is where **sessions** come in.
 
@@ -16,17 +16,16 @@ Sessions allow web applications to **store user-specific data** across multiple 
 
 ## 🧠 What Are Sessions?
 
-When a user visits a website, their browser sends a request to the server. HTTP itself is *stateless*, meaning the server forgets everything after responding. Sessions solve this by storing information (like progress, score, username) **on the server side**, associated with a **unique session ID** stored in the user’s cookies.
+When a user visits a website, their browser sends a request to the server. HTTP itself is *stateless*, meaning the server forgets everything after responding. Sessions solve this by storing information (for this project, it is whether you have a key or not) **on the server side**, associated with a **unique session ID** stored in the user’s cookies.
 
 ### ✅ Sessions help you:
 - Track login/authentication state
 - Preserve game or form progress
-- Store temporary user data (e.g., hunt steps)
+- Store temporary user data (e.g., keys)
 
 In this project, we use sessions to:
-- Track which scavenger clues the player has completed
+- Store progress through use of keys
 - Prevent skipping steps or cheating
-- Store user score or hints collected
 
 ---
 
@@ -41,7 +40,6 @@ This project was built using:
 | `C#`              | Server-side logic and session handling             |
 | `HTML + CSS`      | Front-end markup and styling                       |
 | `JavaScript`      | Interactivity and client-side validation           |
-| `Session Middleware` | Built-in ASP.NET feature for user session tracking |
 
 ---
 
