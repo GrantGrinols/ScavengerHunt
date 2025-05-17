@@ -1,0 +1,57 @@
+﻿body {
+}
+
+.shells {
+    position: relative;
+    width: 400px;
+    height: 350px;
+    margin: 60px auto;
+    perspective: 1000px;
+    background-color: aqua;
+    border: 2px solid black;
+    justify-self: center;
+    align-self: center;
+    padding: 40px;
+}
+
+.shell {
+    width: 100px;
+    height: 100px;
+    background-color: tan;
+    border-radius: 50% 50% 0 0;
+    border: 2px solid #444;
+    position: absolute;
+    cursor: pointer;
+    transition: transform 0.7s ease-in-out;
+    top: 0;
+    left: 0;
+}
+
+.pearl {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+
+
+#message {
+    margin-top: 30px;
+    font-size: 20px;
+    padding: 0 80px 50px 80px;
+    
+    
+    align-self: center;
+    justify-self: center;
+    position: relative;
+    left: 450px;
+    width: 400px;
+    height: 100px;
+ 
+}

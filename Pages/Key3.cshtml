@@ -1,0 +1,19 @@
+﻿@page
+@model ScavengerHunt.Pages.Key3Model
+@{
+    <div class="containerBackground">
+	<div class="display-4">Task 3: Do the maze</div>
+    </div>
+
+    <div id="instructions">Hover over the green start point to begin</div>
+    <div id="game-container">
+        <div id="start">Start</div>
+        <div id="maze"></div>
+        
+    </div>
+    <div id="message"></div>
+    @Html.AntiForgeryToken();
+
+  <script src="~/js/MazeGame.js"></script>
+
+}

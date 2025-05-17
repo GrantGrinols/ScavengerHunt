@@ -1,0 +1,38 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <div class="containerBackground">
+    <h1 class="display-4">Welcome to the scavenger hunt!</h1>
+    
+    </div>
+    <div class="containerBackground">
+    <br /><h3 class="display-4">Keys obtained:</h3>
+    <p class="display-4" id="key1">Key 1 - @Model.Key1</p>
+    <p class="display-4" id="key2">Key 2 - @Model.Key2</p>
+    <p class="display-4" id="key3">Key 3 - @Model.Key3</p>
+    <p class="display-4">Find all 3 keys to open the magic door</p>
+    
+
+    <div class="door-container" id="doorContainer">
+        <div class="door door-left">
+            <div class="door-knob"></div>
+            <span>MAGIC</span>
+        </div>
+        <div class="door door-right">
+            <div class="door-knob"></div>
+            <span>DOOR</span>
+        </div>
+    </div>
+
+
+        <a class="secret-button" asp-area="" asp-page="/SecretRoom" id="secretButton">Enter the secret room</a>
+
+
+</div>
+</div>
+
+<script src="~/js/Doors.js"></script>

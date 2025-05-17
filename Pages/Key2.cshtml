@@ -1,0 +1,23 @@
+﻿@page
+@model ScavengerHunt.Pages.Key2Model
+@{
+    <div class="containerBackground">
+	<div class="display-4">Task 2: Math!!!!</div>
+    <div>You'll be given 10 algebra questions. You have 60 seconds to solve them. Get 7/10 to pass!</div>
+    </div>
+	<button onclick="startGame()">Start Game</button>
+
+    <div id="game">
+        <div id="timer">30</div>
+        <div id="question"></div>
+        <input type="number" id="answer" placeholder="Your answer" />
+        <button onclick="submitAnswer()">Submit</button>
+        <div id="feedback"></div>
+    </div>
+
+    <div id="result"></div>
+
+    @Html.AntiForgeryToken()
+
+    <script src="~/js/MathGame.js"></script>
+}

@@ -1,0 +1,30 @@
+﻿@page
+@model ScavengerHunt.Pages.Key1Model
+@{
+	<div class="containerBackground">
+	<div class="display-4">Task 1: Shell game</div>
+	<div>Keep track of the pearl to get a key!</div>
+	</div>
+	<button onclick="startGame()">Play</button>
+	<div class="shells" id="shellsContainer">
+	<div class="shell" id="shell0" onclick="guess(0)">
+	<div class="pearl"></div>
+	</div>
+	<div class="shell" id="shell1" onclick="guess(1)">
+	<div class="pearl"></div>
+	</div>
+	<div class="shell" id="shell2" onclick="guess(2)">
+	<div class="pearl"></div>
+	</div>
+	
+	</div>
+	<div id="message"></div>
+	
+
+	
+	@Html.AntiForgeryToken()
+	
+
+	<script src="~/js/ShellGame.js"></script>
+
+}
