@@ -6,7 +6,7 @@ Welcome to the **Scavenger Hunt**! This interactive web game lets players play g
 
 ## 🎯 Introduction
 
-In this scavenger hunt game, players hunt for keys in order to open the secret magic door. This project stores these keys on the player's side.
+In this scavenger hunt game, players hunt for keys in order to open the secret magic door. This project stores these keys on the player's side with cookies!
 
 This is where **sessions** come in.
 
@@ -47,8 +47,9 @@ This project was built using:
 
 If you’d like to learn more about how sessions work and best practices for using them securely and effectively, check out these resources:
 
-- 📘 [Microsoft Docs – Session and App State in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/app-state?view=aspnetcore-7.0)
-- 🔒 [OWASP: Session Management Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html)
-- 📚 [MDN: HTTP Cookies and Session Management](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
+- [Microsoft Docs – Session and App State in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/app-state?view=aspnetcore-7.0)
+- [MDN: HTTP Cookies and Session Management](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
 
 ---
+
+Last updated: 5/17/25
